@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Best School" > '\*\\'"'"'"Best School"'"'"'\\*$\?\*\*\*:'
+python3 -c 'import pathlib; pathlib.Path(r"\*\\'\''\"Best School\"'\''\*$\?\*\*\*:").touch()'
