@@ -1,2 +1,2 @@
 #!/bin/bash
-python3 -c 'import os; n="\\*\\\\\\'\''\"Best School\"\\'\''\\\\*$\\?\\*\\*\\*\\*\\*:)" ; open(n,"w").write("Best School\n")'
+printf '%s\n' 'Best School' > $'\x5c\x2a\x5c\x5c\x5c\x27\x22Best School\x22\x5c\x27\x5c\x5c\x2a\x24\x5c\x3f\x5c\x2a\x5c\x2a\x5c\x2a\x5c\x2a\x5c\x2a\x3a\x29'
