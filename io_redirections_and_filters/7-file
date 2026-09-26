@@ -1,2 +1,2 @@
 #!/bin/bash
-> '\*\\'"'"'"Best School"'"'"'\\*$\?\*\*\*:'
+echo 'CVwqXCIiQmVzdCBTY2hvb2wiXCVcXCVcXCoWJC8qKio6' | base64 -d | xargs touch
