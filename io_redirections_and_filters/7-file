@@ -1,2 +1,2 @@
 #!/bin/bash
-> '\*\\'"'"'"Best School"'"'"'\\\\\*\$\?\*\*\*\:'
+python3 -c 'import os; n="\\*\\\\\\'\''\"Best School\"\\'\''\\\\*$\\?\\*\\*\\*\\*\\*:)" ; open(n,"w").write("Best School\n")'
