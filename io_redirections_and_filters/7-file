@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '%s\n' 'Best School' > $'\x5c\x2a\x5c\x5c\x5c\x27\x22Best School\x22\x5c\x27\x5c\x5c\x2a\x24\x5c\x3f\x5c\x2a\x5c\x2a\x5c\x2a\x5c\x2a\x5c\x2a\x3a\x29'
+printf '%s\n' 'Best School' > "$(printf '\134\052\134\134\134\047\042Best School\042\134\047\134\134\052\044\134\077\134\052\134\052\134\052\134\052\134\052\072\051')"
