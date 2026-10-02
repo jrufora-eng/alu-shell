@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# This script displays specific user details from /etc/passwd
+while IFS=: read -r username password uid gid comment home shell; do
+  echo "$username:$uid:$home"
+done < /etc/passwd
