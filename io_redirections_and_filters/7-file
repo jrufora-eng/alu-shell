@@ -1,2 +1,2 @@
 #!/bin/bash
-file -f - *
+file -m /usr/share/misc/magic *
