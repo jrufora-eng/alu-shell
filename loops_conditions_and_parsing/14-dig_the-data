@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # Group visitors by IP and HTTP status code and display occurrence count
-awk '{print $1, $9}' "${1:-/dev/stdin}" | sort | uniq -c | sort -nr | awk '{print $1, $2, $3}'
+file="${1:-apache-access.log}"
+awk 'NF >= 9 {print $1, $9}' "$file" | sort | uniq -c | sort -nr | awk '{print $1, $2, $3}'
