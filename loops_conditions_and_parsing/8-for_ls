@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script displays directory contents showing only the part after the first dash
+for file in *; do
+  if [ -f "$file" ] || [ -d "$file" ]; then
+    echo "$file" | cut -d'-' -f2-
+  fi
+done
