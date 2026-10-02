@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "ibase=5; obase=8; $(echo "$WATER" | tr 'water' '01234') + $(echo "$STIR" | tr 'stir.' '01234')" | bc | tr '01234567' 'bestchol'
+awk -v w="$(echo "$WATER" | tr 'water' '01234')" -v s="$(echo "$STIR" | tr 'stir.' '01234')" 'BEGIN { for(i=1;i<=length(w);i++) W=W*5+index("01234",substr(w,i,1))-1; for(i=1;i<=length(s);i++) S=S*5+index("01234",substr(s,i,1))-1; sum=W+S; if(!sum){print "b"; exit} while(sum>0){res=substr("bestchol",(sum%8)+1,1) res; sum=int(sum/8)} print res }'
